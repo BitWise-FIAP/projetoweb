@@ -9,6 +9,7 @@ const Nav=()=>{
             <Link to="/produtos">Produtos</Link>
             <Link to="/sobre">Sobre</Link>
         </nav>
+        <hr/>
         </>
     )
 }
