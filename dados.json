@@ -1,0 +1,9 @@
+{
+    "usuarios": [
+        {
+            "id": "01",
+            "usuario": "bitwise",
+            "senha": "bit"
+        }
+    ]
+}
