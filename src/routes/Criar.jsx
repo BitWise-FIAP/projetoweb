@@ -1,6 +1,6 @@
-import { CriarStyle } from "styled-components";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { CriarStyle } from "../css/CriarStyle";
+import { useParams, Link, useNavigate } from "react-router-dom"
+import { useState } from "react"
 
 const Criar=()=>{
 

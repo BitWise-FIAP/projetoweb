@@ -1,9 +1,14 @@
 {
-    "usuarios": [
-        {
-            "id": "01",
-            "usuario": "bitwise",
-            "senha": "bit"
-        }
-    ]
+  "usuarios": [
+    {
+      "id": "01",
+      "usuario": "bitwise",
+      "senha": "bit"
+    },
+    {
+      "id": "6fb0",
+      "usuario": "testando1",
+      "senha": "senha1"
+    }
+  ]
 }

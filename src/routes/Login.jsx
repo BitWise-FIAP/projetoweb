@@ -91,7 +91,7 @@ const Login=()=>{
                             </li>
                             <li>
                                 <span className="texto-utilidade">Não possui conta? </span>
-                                <Link to="/conta">Criar</Link>
+                                <Link to="/criar">Criar</Link>
                             </li>
                         </ul>
                     </form>
