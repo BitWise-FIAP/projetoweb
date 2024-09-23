@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 body{
-    
+    background: linear-gradient(to right, #134563, #8a9fb4)
 }
 :root{
     --color1:#fff;
     --color2:#000;
-    --color3:blue;
-    --color4:rgb(29,216,29);
-    --color5:yellow;
-    --color6:#ccc;
+    --color3:#134563;
+    --color4:#817278;
+    --color5:#4f698c;
+    --color6:#5c748e;
+    --color7:#8a9fb4;
+    --color7:#ccc;
     
 }
