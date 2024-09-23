@@ -14,7 +14,10 @@ const Home=()=>{
         <>
         <HomeStyle>
             <section>
-                <h1>Promova a sustentabilidade do meio ambiente!</h1>
+                <div className="title">
+                    <h1>Promova a sustentabilidade do meio ambiente!</h1>
+                </div>
+                
                 <div className="slider">
                     <div className="slides">
                         <input type="radio" name="radio-btn" id="radio1"/>
@@ -56,7 +59,9 @@ const Home=()=>{
                         <label htmlFor="radio4" className="manual-btn"></label>
                     </div>
                 </div>
-                <p>O meio ambiente anda em grande degradação, estamos presenciando queimadas, diminuição da qualidade do ar, falta de chuvas, aquecimento global, aumento do nivel dos oceanos e muito mais. Dessa forma, devemos contribuir para um futuro mais sustentável para que as próximas gerações (e a nossa própria) consiga ter um futuro com maior qualidade e expectativa de vida.</p>
+                <div className="content">
+                    <p>O meio ambiente anda em grande degradação, estamos presenciando queimadas, diminuição da qualidade do ar, falta de chuvas, aquecimento global, aumento do nivel dos oceanos e muito mais. Dessa forma, devemos contribuir para um futuro mais sustentável para que as próximas gerações (e a nossa própria) consiga ter um futuro com maior qualidade e expectativa de vida.</p>
+                </div>
             </section>   
         </HomeStyle>
         

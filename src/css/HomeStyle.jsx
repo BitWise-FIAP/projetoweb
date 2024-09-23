@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
 export const HomeStyle = styled.section`
+
+:root{
+    --color1:#fff;
+    --color2:#000;
+    --color3:#134563;
+    --color4:#817278;
+    --color5:#4f698c;
+    --color6:#5c748e;
+    --color7:#8a9fb4;
+    --color7:#ccc;
+    
+}
+
 .slider{
     margin: 0 auto;
     width: 100%;
@@ -110,10 +123,28 @@ export const HomeStyle = styled.section`
     background-color: #fff;
 }    
    /* Fim dos estilos do slideShow */
-
+.title{
+    display: flex;
+    margin: 2vh;
+    justify-content: center;
+}
+.title h1{
+    font-family: cursive;
+    font-size: 2rem;
+    color: var(--color1);
+    text-decoration: underline;
+    text-shadow: 3px 2px var(--color2);
+}
+.content{
+    height: 50vh;
+}
 p{
+    margin: 3vh;
     font-family: cursive;
     text-align: center;
+    font-size: 2rem;
+    color: var(--color1);
+    text-shadow: 3px 2px var(--color2);
 }
 
 `
