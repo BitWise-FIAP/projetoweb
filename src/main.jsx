@@ -7,6 +7,7 @@ import Produtos from './routes/Produtos.jsx'
 import Home from './routes/Home.jsx'
 import Sobre from './routes/Sobre.jsx'
 import CadastrarProduto from './routes/CadastrarProduto.jsx'
+import Criar from './routes/Criar.jsx'
 
 const router = createBrowserRouter([{
   path:"/", element:<App/>,
@@ -17,7 +18,8 @@ const router = createBrowserRouter([{
     {path:"/login", element:<Login/>},
     {path:"/produtos", element:<Produtos/>},
     {path:"/sobre", element:<Sobre/>},
-    {path:"/cadastrarProduto",element:<CadastrarProduto/>}
+    {path:"/cadastrarProduto",element:<CadastrarProduto/>},
+    {path:"/criar", element: <Criar/>}
   ]
 }])
 createRoot(document.getElementById('root')).render(
