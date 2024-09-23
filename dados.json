@@ -10,5 +10,37 @@
       "usuario": "testando1",
       "senha": "senha1"
     }
+  ],
+  "produtos": [
+    {
+      "nome": "banana",
+      "preco": "100"
+    },
+    {
+      "nome": "abacate",
+      "preco": "123123"
+    },
+    {
+      "id": "312f",
+      "nome": "",
+      "preco": ""
+    },
+    {
+      "id": "4673",
+      "nome": "",
+      "preco": "",
+      "": "123"
+    },
+    {
+      "id": "2876",
+      "nome": "",
+      "preco": "33322334",
+      "": "33322333"
+    },
+    {
+      "id": "a217",
+      "nome": "baawdqad",
+      "preco": "123"
+    }
   ]
 }
