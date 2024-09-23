@@ -1,3 +1,4 @@
+import "../css/global.css"
 import { CriarStyle } from "../css/CriarStyle";
 import { useParams, Link, useNavigate } from "react-router-dom"
 import { useState } from "react"

@@ -1,4 +1,6 @@
+import "../css/global.css"
 import { HomeStyle } from "../css/HomeStyle"
+import "../css/global.css"
 import { useState } from "react";
 import preservar from "../assets/preservando-entre-geracoes.jpg"
 import paisagem1 from "../assets/paisagem-1.jpg"
@@ -12,7 +14,7 @@ const Home=()=>{
         <>
         <HomeStyle>
             <section>
-                <h1>Titulo da loja</h1>
+                <h1>Promova a sustentabilidade do meio ambiente!</h1>
                 <div className="slider">
                     <div className="slides">
                         <input type="radio" name="radio-btn" id="radio1"/>
@@ -54,7 +56,7 @@ const Home=()=>{
                         <label htmlFor="radio4" className="manual-btn"></label>
                     </div>
                 </div>
-                <p>Texto sobre o Tema</p>
+                <p>O meio ambiente anda em grande degradação, estamos presenciando queimadas, diminuição da qualidade do ar, falta de chuvas, aquecimento global, aumento do nivel dos oceanos e muito mais. Dessa forma, devemos contribuir para um futuro mais sustentável para que as próximas gerações (e a nossa própria) consiga ter um futuro com maior qualidade e expectativa de vida.</p>
             </section>   
         </HomeStyle>
         

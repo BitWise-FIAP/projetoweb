@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+:root{
+    --color1:#fff;
+    --color2:#000;
+    --color3:blue;
+    --color4:rgb(29,216,29);
+    --color5:yellow;
+    --color6:#ccc;
+    
+}

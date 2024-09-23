@@ -109,5 +109,11 @@ export const HomeStyle = styled.section`
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }    
-   
+   /* Fim dos estilos do slideShow */
+
+p{
+    font-family: cursive;
+    text-align: center;
+}
+
 `

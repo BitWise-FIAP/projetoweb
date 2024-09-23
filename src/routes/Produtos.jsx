@@ -1,3 +1,4 @@
+import "../css/global.css"
 import { Link,useNavigate } from "react-router-dom"
 import { useState,useEffect,useRef } from "react";
 

@@ -1,3 +1,4 @@
+import "../css/global.css"
 import { useNavigate, Link } from "react-router-dom"
 import { useEffect, useRef, useState} from "react"
 import { LoginStyle } from "../css/LoginStyle";
