@@ -1,5 +1,10 @@
 import { HomeStyle } from "../css/HomeStyle"
 import { useState } from "react";
+import preservar from "../assets/preservando-entre-geracoes.jpg"
+import paisagem1 from "../assets/paisagem-1.jpg"
+import paisagem2 from "../assets/paisagem-2.jpg"
+import paisagem3 from "../assets/paisagem-3.jpg"
+import paisagem4 from "../assets/paisagem-4.jpg"
 
 const Home=()=>{
     
@@ -17,19 +22,19 @@ const Home=()=>{
             
                         {/* <!-- SLIDES IMAGE --> */}
                         <div className="slide first">
-                            <img src="" alt="imagem 1"/>
+                            <img src={preservar} alt="imagem 1"/>
                         </div>
             
                         <div className="slide">
-                            <img src="" alt="imagem 2"/>
+                            <img src={paisagem1} alt="imagem 2"/>
                         </div>
             
                         <div className="slide">
-                            <img src="" alt="imagem 3"/>
+                            <img src={paisagem2} alt="imagem 3"/>
                         </div>
             
                         <div className="slide">
-                            <img src="" alt="imagem 4"/>
+                            <img src={paisagem3} alt="imagem 4"/>
                         </div>
                         {/* <!-- FIM SLIDES --> */}
             
