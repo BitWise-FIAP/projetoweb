@@ -18,7 +18,7 @@ const Login=()=>{
         for(let i=0; i<usuarios.length; i++){
             if(
                 usuarios[i].usuario== usuario.current.value &&
-                usuarios[i].usuario== usuario.current.value
+                usuarios[i].senha== senha.current.value
             ){
                 return true;
             }
