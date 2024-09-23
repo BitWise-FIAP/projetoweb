@@ -8,7 +8,7 @@ const Login=()=>{
     const senha = useRef();
 
     // usando useState para alterar a variavel (criando array para diversos usuarios)
-    const [usuarios, setUsuarios]= useState([]);
+    const [usuarios, setUsuarios]= useState();
 
     // criando useNavigate para redirecionar para CadastrarProdutos
     const navigate = useNavigate();
@@ -17,9 +17,9 @@ const Login=()=>{
     function validade (){
         for(let i=0; i<usuarios.length; i++){
             if(
-                usuarios[i].usuario== usuario.current.value &&
-                usuarios[i].senha== senha.current.value
-            ){
+                usuarios[i].usuario == usuario.current.value &&
+                usuarios[i].senha == senha.current.value
+            ){ 
                 return true;
             }
         }
@@ -31,9 +31,9 @@ const Login=()=>{
         
         if(validade()){
             let token = 
-            Math.random().toString(8).substring(2)+
-            Math.random().toString(8).substring(2)
-            sessionStorage.setItem("usuario",usuario)
+            Math.random().toString(16).substring(2)+
+            Math.random().toString(16).substring(2)
+            sessionStorage.setItem("usuario", usuario)
             sessionStorage.setItem("senha",token)
             navigate("/cadastrarProduto")
         }else{
@@ -43,7 +43,7 @@ const Login=()=>{
 
     useEffect(()=>{
         //acessar a api e trazer os dados
-        fetch("http://localhost:5001/usuarios/")
+        fetch("http://localhost:5001/usuarios")
 
         //promessa
         .then((resposta)=>{
@@ -74,7 +74,7 @@ const Login=()=>{
 
                         <div className="div-input">
                             <input
-                                type="text"
+                                type="password"
                                 className="caixa-input"
                                 id="senha"
                                 ref={senha}
