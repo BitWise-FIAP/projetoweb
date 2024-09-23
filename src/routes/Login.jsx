@@ -43,7 +43,7 @@ const Login=()=>{
 
     useEffect(()=>{
         //acessar a api e trazer os dados
-        fetch("http://localhost:5000/usuarios/")
+        fetch("http://localhost:5001/usuarios/")
 
         //promessa
         .then((resposta)=>{
