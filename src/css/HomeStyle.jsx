@@ -99,7 +99,7 @@ export const HomeStyle = styled.section`
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{

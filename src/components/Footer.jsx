@@ -13,9 +13,7 @@ const Footer=()=>{
         <a href="#instagram"><SlSocialInstagram/></a>
         <a href="#linkedin"><SlSocialLinkedin/></a>
         <a href="#email"><TfiEmail/></a>
-        
-
-
+    
         </>
     )
 }
