@@ -32,6 +32,11 @@ export const LoginStyle = styled.section`
     background: transparent;
 }
 .login-form{
+    background-color: var(--color1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     width: 100%;
 }
 .titulo{

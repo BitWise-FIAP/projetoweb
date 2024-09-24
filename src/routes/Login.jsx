@@ -68,6 +68,7 @@ const Login=()=>{
                             <input
                                 type="text"
                                 className="caixa-input"
+                                placeholder="Digite o nome do usuário"
                                 id="usuario"
                                 ref={usuario}
                             />
@@ -77,6 +78,7 @@ const Login=()=>{
                             <input
                                 type="password"
                                 className="caixa-input"
+                                placeholder="Digite sua senha"
                                 id="senha"
                                 ref={senha}
                             />

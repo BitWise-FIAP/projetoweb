@@ -14,17 +14,23 @@
       "id": "73a5",
       "usuario": "oi",
       "senha": "1223"
+    },
+    {
+      "id": "9577",
+      "usuario": "zxc",
+      "senha": "cxzc"
     }
   ],
   "produtos": [
     {
       "nome": "banana",
-      "preco": "100"
+      "preco": "100",
+      "id": "8a59"
     },
     {
       "nome": "abacate",
-      "preco": "123123"
+      "preco": "123123",
+      "id": "1aa1"
     }
-    
   ]
 }
