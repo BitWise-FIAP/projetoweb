@@ -1,6 +1,7 @@
 import "../css/global.css"
 import { Link,useNavigate,useParams } from "react-router-dom"
 import { useState,useEffect,useRef } from "react"
+import { CadastrarProdutoStyle } from "../css/CadastrarProdutoStyle";
 
 const CadastrarProduto=()=>{
     const navigate = useNavigate();
@@ -31,12 +32,20 @@ const CadastrarProduto=()=>{
 
     return(
         <>
-            <h1>Cadastrar novo produto</h1>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="nome" placeholder="Nome do produto" onChange={handleChange}/>
-                <input type="number" name="preco" placeholder="Preço do produto" onChange={handleChange}/>
-                <button type="submit">Cadastrar</button>
-            </form>
+        <CadastrarProdutoStyle>
+            <section className="corpo">
+                <section className="content">
+                    <h1>Cadastrar novo produto</h1>
+                    <form className="div-input" onSubmit={handleSubmit}>
+                        <input className="caixa-input" type="text" name="nome" placeholder="Nome do produto" onChange={handleChange}/>
+                        <input className="caixa-input" type="number" name="preco" placeholder="Preço do produto" onChange={handleChange}/>
+                        <div className="botao">
+                            <button className="botao-cadastro" type="submit">Cadastrar</button>   
+                        </div> 
+                    </form>
+                </section>
+            </section>
+        </CadastrarProdutoStyle>
         </>
     )
 }
