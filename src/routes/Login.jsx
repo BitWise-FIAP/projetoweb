@@ -88,7 +88,7 @@ const Login=()=>{
 
                         <ul className="utilidades">
                             <li>
-                                <a href="#" className="texto-utilidade">Esqueceu sua senha?</a>
+                                <a href="#">Esqueceu sua senha?</a>
                             </li>
                             <li>
                                 <span className="texto-utilidade">Não possui conta? </span>
