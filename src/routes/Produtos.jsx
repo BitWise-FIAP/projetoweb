@@ -1,6 +1,7 @@
 import "../css/global.css"
 import { Link,useNavigate } from "react-router-dom"
 import { useState,useEffect,useRef } from "react";
+import { ProdutosStyle } from "../css/ProdutosStyle";
 
 const Produtos=()=>{
 
@@ -26,17 +27,26 @@ const Produtos=()=>{
     },[])
     return(
         <>
-            <h2>Produtos Registrados</h2>
-            <span>Deseja cadastrar um novo produto? </span>
-            <button type="button" onClick={newProdHandler}>Cadastrar</button>
-
-            <ul>
-                {produtos.map((produto, index) => (
-                    <li key={index}>
-                        <label>{produto.nome} R${produto.preco}</label>
-                    </li>
-                ))}
-            </ul>
+        <ProdutosStyle>
+            <section className="content">
+                <div className="header">
+                    <div className="texto">
+                        <h2>Produtos Registrados</h2>
+                        <span>Deseja cadastrar um novo produto? </span>
+                    </div>
+                    <button type="button" onClick={newProdHandler}>Cadastrar</button>
+                </div>
+                <div className="formulario">
+                    <ul>
+                        {produtos.map((produto, index) => (
+                            <li key={index}>
+                                <label>{index+1} - {produto.nome}: R${produto.preco}</label>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        </ProdutosStyle>
         </>
     )
 }
