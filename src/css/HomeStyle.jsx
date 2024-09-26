@@ -136,15 +136,136 @@ export const HomeStyle = styled.section`
     text-shadow: 3px 2px var(--color2);
 }
 .content{
-    height: 50vh;
+    height: 100vh;
 }
-p{
+.content p{
     margin: 3vh;
     font-family: cursive;
     text-align: center;
     font-size: 2rem;
     color: var(--color1);
     text-shadow: 3px 2px var(--color2);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background: #221d2d;
+    color: #fdfcfd;
+    gap: 80px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  background: #121017;
+  border-radius: 24px;
+}
+
+.card img {
+  max-width: 280px;
+  width: 35vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+}
+
+.card h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.75;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.card button {
+  border: 1px solid #f8f8f8;
+  background: transparent;
+  color: #f8f8f8;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all .05s ease-in-out;
+}
+
+.card button:active{
+    scale: 1.03;
+    
+}
+
+@media (width <= 1400px){
+    .cards{
+        height: auto;
+    }
+}
+
+@media (width <= 600px) {
+    .cards{
+        padding: 70px;
+        gap: 90px;
+
+    }
+    .card {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card h2 {
+        margin-right: 0;
+        font-size: 26px;
+    }
+
+    .card img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+    }
+
+    .card p {
+        max-width: 360px;
+    }
+}
+
+@media (width <= 440px) {
+  .card img {
+    height: 45vw;
+    width: 45vw;
+    border-radius: 50%;
+    margin: -140px 0 30px 0;
+  }
 }
 
 `

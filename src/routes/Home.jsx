@@ -7,6 +7,7 @@ import paisagem1 from "../assets/paisagem-1.jpg"
 import paisagem2 from "../assets/paisagem-2.jpg"
 import paisagem3 from "../assets/paisagem-3.jpg"
 import paisagem4 from "../assets/paisagem-4.jpg"
+import card1 from "../assets/card1.jpg"
 
 const Home=()=>{
     
@@ -62,7 +63,30 @@ const Home=()=>{
                 <div className="content">
                     <p>O meio ambiente anda em grande degradação, estamos presenciando queimadas, diminuição da qualidade do ar, falta de chuvas, aquecimento global, aumento do nivel dos oceanos e muito mais. Dessa forma, devemos contribuir para um futuro mais sustentável para que as próximas gerações (e a nossa própria) consiga ter um futuro com maior qualidade e expectativa de vida.</p>
                 </div>
-            </section>   
+            </section>
+            <div className="cards">
+                <div className="card">
+                    <img src={card1}/>
+                    <div>
+                        <h2>Tesla Model S Plaid</h2>
+                        <h3>UX Developer</h3>
+                        <p>Empowering users through captivating interfaces, turning ideas into
+                        pixel-perfect realities.</p>
+                        <button>Follow Account</button>
+                    </div>
+                </div>
+                <div className="card">
+                    <img src={card1}/>
+                    <div>
+                        <h2>Tesla Model S Plaid</h2>
+                        <h3>UX Developer</h3>
+                        <p>Empowering users through captivating interfaces, turning ideas into
+                        pixel-perfect realities.</p>
+                        <button>Follow Account</button>
+                    </div>
+                </div>    
+            </div>
+             
         </HomeStyle>
         
         

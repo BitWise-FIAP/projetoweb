@@ -33,7 +33,7 @@ nav ul{
     gap: 30px;
     padding: 15px;
     border-radius: 50px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, .18);
     transition: .7s all ease-in-out;
@@ -41,7 +41,7 @@ nav ul{
 }
 
 nav ul:hover{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     transition: .7s all ease-in-out;
 }
 
