@@ -27,10 +27,11 @@ export const FooterStyle = styled.section`
 .icons{
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 .icons a{
-    padding: 0.5vh;
     color: var(--color7);
 }
+
 
 `

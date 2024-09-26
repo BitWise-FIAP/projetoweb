@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import imgnav from "../assets/fundo-nav2.avif"
 export const NavStyle = styled.section`
     
 :root{
@@ -13,37 +13,61 @@ export const NavStyle = styled.section`
     --color7:#ccc;
     
 }
-.img1{
-    object-fit: none;
-    position: absolute;
-    height: 9vh;
-    width: 100%;
-    filter: brightness(80%)
+
+nav{
+    padding: 15px;
+    background: url(${imgnav});
+    background-size:cover ;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-container{
-    width: 100%;
-    height: 9vh;
-    background-color: var(--color7);
-    position: relative;
-}
 nav ul{
+    width: 70vh;
     display: flex;
-    margin-left: 65%;
-    justify-content: space-around;
-    padding-top: 2%;
+    justify-content: center;
     list-style: none;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, .18);
+    transition: .7s all ease-in-out;
+   
 }
-nav a{
+
+nav ul:hover{
+    backdrop-filter: blur(10px);
+    transition: .7s all ease-in-out;
+}
+
+nav ul li{
+    transition: .2s all ease-in-out;
+    
+}
+
+nav ul li:hover{
+    transition: .2s all ease-in-out;
+    transform: translateY(-4px);
+    
+}
+
+nav ul li a{
     text-decoration: none;
-    position: absolute;
     color: var(--color1);
     font-size: 30px;
     transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
 }
-nav a:hover{
-    transition: .2s all ease-in-out;
-    transform: translateY(-4px);
+
+nav ul li a:hover{
     color: var(--color7);
 }
     
