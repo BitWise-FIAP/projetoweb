@@ -8,6 +8,8 @@ import paisagem2 from "../assets/paisagem-2.jpg"
 import paisagem3 from "../assets/paisagem-3.jpg"
 import paisagem4 from "../assets/paisagem-4.jpg"
 import card1 from "../assets/card1.jpg"
+import { HiOutlineDotsVertical } from "react-icons/hi";
+import { IoIosClose } from "react-icons/io";
 
 const Home=()=>{
     
@@ -93,17 +95,17 @@ const Home=()=>{
                         <div className="card2">
                             <div className="front">
                                 <header>
-                                <h2>Summary</h2>
-                                <span className="material-symbols-outlined"> more_vert </span>
+                                <h2>Cavalos</h2>
+                                <span><HiOutlineDotsVertical/></span>
                                 </header>
-                                <var>21</var>
-                                <h3>Due Tasks</h3>
+                                <var>530</var>
+                                <h3>CV</h3>
                                 <h4>Completed: 13</h4>
                             </div>
                             <div className="back">
                                 <header>
                                 <h2>Summary</h2>
-                                <span className="material-symbols-outlined"> close </span>
+                                <span><IoIosClose/></span>
                                 </header>
                                 <p>More Information</p>
                             </div>
@@ -114,17 +116,17 @@ const Home=()=>{
                         <div className="card2">
                         <div className="front">
                             <header>
-                            <h2>Overdue</h2>
-                            <span className="material-symbols-outlined"> more_vert </span>
+                            <h2>Velocidade Max</h2>
+                            <span><HiOutlineDotsVertical/></span>
                             </header>
-                            <var>17</var>
-                            <h3>Projects</h3>
+                            <var>180</var>
+                            <h3>km/h</h3>
                             <h4>Yesterday: 9</h4>
                         </div>
                         <div className="back">
                             <header>
                             <h2>Overdue</h2>
-                            <span className="material-symbols-outlined"> close </span>
+                            <span><IoIosClose/></span>
                             </header>
                             <p>More Information</p>
                         </div>
@@ -136,16 +138,16 @@ const Home=()=>{
                             <div className="front">
                                 <header>
                                 <h2>Features</h2>
-                                <span className="material-symbols-outlined"> more_vert </span>
+                                <span><HiOutlineDotsVertical/></span>
                                 </header>
-                                <var>38</var>
-                                <h3>Proposals</h3>
+                                <var>372</var>
+                                <h3>km de autonomia</h3>
                                 <h4>Implemented: 6</h4>
                             </div>
                             <div className="back">
                                 <header>
                                 <h2>Features</h2>
-                                <span className="material-symbols-outlined"> close </span>
+                                <span><IoIosClose/></span>
                                 </header>
                                 <p>More Information</p>
                             </div>
