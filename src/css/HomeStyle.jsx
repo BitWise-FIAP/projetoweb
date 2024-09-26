@@ -268,4 +268,107 @@ export const HomeStyle = styled.section`
   }
 }
 
+.cards2-grid{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #f7f7f7;
+    background: #121212;
+    }
+
+.cards2-grid h2, h3, h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.cards2 {
+  display: flex;
+  gap: 30px;
+}
+
+.card2 {
+  position: relative;
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+}
+
+.card2 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 26px;
+}
+
+.card2 header h2 {
+  font-size: 20px;
+}
+
+.card2 .front,
+.card2 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 36px 36px 44px 44px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+input {
+  position: absolute;
+  scale: 0;
+}
+
+input:checked ~ .card2 .back {
+  transform: rotateY(0);
+}
+
+input:checked ~ .card2 .front {
+  transform: rotateY(-180deg);
+}
+
+.card2 var {
+  font-style: normal;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.card2 h3 {
+  margin: 0 0 30px;
+  font-weight: 500;
+}
+
+#summary :is(var, h3) {
+  color: #3b82f6;
+}
+
+#overdue :is(var, h3) {
+  color: #e56363;
+}
+
+#features :is(var, h3) {
+  color: #25b697;
+}
+
+.card2 :is(h4, p) {
+  opacity: 0.6;
+  font-size: 20px;
+}
+
+.card2 p {
+  margin-top: 76px;
+}
+
+
 `

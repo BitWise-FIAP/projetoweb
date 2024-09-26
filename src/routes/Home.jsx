@@ -84,8 +84,77 @@ const Home=()=>{
                         pixel-perfect realities.</p>
                         <button>Follow Account</button>
                     </div>
-                </div>    
+                </div>
             </div>
+            <div className="cards2-grid">
+                <div className="cards2">
+                    <label id="summary">
+                        <input type="checkbox" />
+                        <div className="card2">
+                            <div className="front">
+                                <header>
+                                <h2>Summary</h2>
+                                <span className="material-symbols-outlined"> more_vert </span>
+                                </header>
+                                <var>21</var>
+                                <h3>Due Tasks</h3>
+                                <h4>Completed: 13</h4>
+                            </div>
+                            <div className="back">
+                                <header>
+                                <h2>Summary</h2>
+                                <span className="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label id="overdue">
+                        <input type="checkbox" />
+                        <div className="card2">
+                        <div className="front">
+                            <header>
+                            <h2>Overdue</h2>
+                            <span className="material-symbols-outlined"> more_vert </span>
+                            </header>
+                            <var>17</var>
+                            <h3>Projects</h3>
+                            <h4>Yesterday: 9</h4>
+                        </div>
+                        <div className="back">
+                            <header>
+                            <h2>Overdue</h2>
+                            <span className="material-symbols-outlined"> close </span>
+                            </header>
+                            <p>More Information</p>
+                        </div>
+                        </div>
+                    </label>
+                    <label id="features">
+                        <input type="checkbox" />
+                        <div className="card2">
+                            <div className="front">
+                                <header>
+                                <h2>Features</h2>
+                                <span className="material-symbols-outlined"> more_vert </span>
+                                </header>
+                                <var>38</var>
+                                <h3>Proposals</h3>
+                                <h4>Implemented: 6</h4>
+                            </div>
+                            <div className="back">
+                                <header>
+                                <h2>Features</h2>
+                                <span className="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            
              
         </HomeStyle>
         
