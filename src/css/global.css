@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--color7);
 }
+
 :root{
     --color1:#fff;
     --color2:#000;
@@ -15,5 +17,9 @@ body{
     --color6:#5c748e;
     --color7:#8a9fb4;
     --color7:#ccc;
-    
+}
+
+html{
+    font-family: "Poppins";
+    font-weight: 800;
 }

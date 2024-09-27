@@ -17,15 +17,15 @@ export const NavStyle = styled.section`
 nav{
     padding: 12px;
     background: url(${imgnav});
-    background-size:cover ;
-    background-position: center;
+    background-size: cover;
+    background-position: 50% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 nav ul{
-    width: 70vh;
+    width: 80vh;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -33,15 +33,14 @@ nav ul{
     gap: 30px;
     padding: 15px;
     border-radius: 50px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, .18);
     transition: .7s all ease-in-out;
-   
 }
 
 nav ul:hover{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     transition: .7s all ease-in-out;
 }
 
@@ -71,6 +70,5 @@ nav ul li a:hover{
     color: var(--color1);
 }
     
-
 
 `

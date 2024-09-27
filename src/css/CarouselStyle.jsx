@@ -4,7 +4,7 @@ export const CarouselStyle = styled.section`
 
 .carousel {
     max-width: 800px;
-    padding: 110px 0 110px 0;
+    padding: 80px 0 80px;
     border-radius: 10px;
     position: relative;
     display: flex;

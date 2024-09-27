@@ -1,5 +1,6 @@
 import "../css/global.css"
 import { HomeStyle } from "../css/HomeStyle"
+import { Link } from "react-router-dom"
 import "../css/global.css"
 import { useState } from "react";
 import paisagem1 from "../assets/carro1.webp"
@@ -7,6 +8,7 @@ import paisagem2 from "../assets/carro2.jpg"
 import paisagem3 from "../assets/carro3.jpg"
 import paisagem4 from "../assets/carro4.webp"
 import card1 from "../assets/card1.jpg"
+import byd from "../assets/byd.webp"
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import Carousel from "../components/Carousel";
@@ -18,7 +20,11 @@ const Home=()=>{
     return(
         <>
         <HomeStyle>
+            <h2 className="title">Seu próximo carro elétrico está aqui.</h2>
             <div className="carousel">
+                <div className="slogan">
+                    <h2><span>Tecnologia, </span><br />desempenho <br />e sustentabilidade <br />ao <span>seu alcance!</span></h2>
+                </div>
                 <Carousel imgs={imgs} />
             </div>   
             <div className="cards">
@@ -26,17 +32,18 @@ const Home=()=>{
                     <img src={card1}/>
                     <div>
                         <h2>Tesla Model S Plaid</h2>
-                        <h3>UX Developer</h3>
+                        <h3>R$ 1.699.000</h3>
                         <p>Empowering users through captivating interfaces, turning ideas into
                         pixel-perfect realities.</p>
                         <button>Follow Account</button>
+                       
                     </div>
                 </div>
                 <div className="card">
                     <img src={card1}/>
                     <div>
-                        <h2>Tesla Model S Plaid</h2>
-                        <h3>UX Developer</h3>
+                        <h2>Tesla Model Y</h2>
+                        <h3>R$ 650.000 </h3>
                         <p>Empowering users through captivating interfaces, turning ideas into
                         pixel-perfect realities.</p>
                         <button>Follow Account</button>
@@ -44,6 +51,8 @@ const Home=()=>{
                 </div>
             </div>
             <div className="cards2-grid">
+                <h2 className="title">Byd <span>Seal 2024</span></h2>
+                <img src={byd}/>
                 <div className="cards2">
                     <label id="summary">
                         <input type="checkbox" />

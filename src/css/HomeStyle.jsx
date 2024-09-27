@@ -14,12 +14,31 @@ export const HomeStyle = styled.section`
     
 }
 
+.title{
+  font-size: 3rem;
+  color: white;
+  background: #121212;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.slogan span{
+  color: #134563;
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
 .carousel{
   width: 100%;
   background-color: #121212;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.carousel h2{
+  color: white;
+  font-size: 3rem;
 }
 
 .cards{
@@ -29,9 +48,8 @@ export const HomeStyle = styled.section`
     justify-content: center;
     margin: 0;
     width: 100%;
-    height: 100vh;
-    padding: 50px;
-    background: #221d2d;
+    padding: 150px 0 150px;
+    background: #134563;
     color: #fdfcfd;
     gap: 80px;
 }
@@ -42,24 +60,31 @@ export const HomeStyle = styled.section`
   width: 75vw;
   max-width: 650px;
   padding: 50px 30px 50px 20px;
-  background: #121017;
+  background: #0a2536;
   border-radius: 24px;
 }
 
 .card img {
-  max-width: 280px;
-  width: 35vw;
+  max-width: 390px;
+  width: 45vw;
   height: 300px;
   object-fit: cover;
+  object-position: 55%;
   margin-left: -60px;
   margin-right: 30px;
   border-radius: inherit;
   box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+  transition: all .2s ease-in-out;
+}
+
+.card img:hover{
+  transform: scale(1.03);
+
 }
 
 .card h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 0;
   margin-right: 30px;
   margin-bottom: 10px;
@@ -67,7 +92,7 @@ export const HomeStyle = styled.section`
 
 .card h3 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   opacity: 0.75;
 }
@@ -85,6 +110,7 @@ export const HomeStyle = styled.section`
   color: #f8f8f8;
   padding: 16px 26px;
   font-size: 16px;
+  font-weight: 700;
   border-radius: 40px;
   cursor: pointer;
   transition: all .05s ease-in-out;
@@ -113,6 +139,7 @@ export const HomeStyle = styled.section`
         padding-right: 50px;
         padding-bottom: 60px;
         width: 100%;
+        font-family: "Poppins";
         text-align: center;
         flex-direction: column;
     }
@@ -145,12 +172,22 @@ export const HomeStyle = styled.section`
 
 .cards2-grid{
     margin: 0;
-    height: 100vh;
+    padding-bottom: 100px;
+    height: auto;
     display: grid;
     place-items: center;
     color: #f7f7f7;
     background: #121212;
-    }
+}
+
+.title span{
+  color: #134563;
+  font-weight: bolder;
+}
+
+.cards2-grid img{
+  width: 55vh;
+}
 
 .cards2-grid h2, h3, h4 {
   margin: 0;
