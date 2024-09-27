@@ -15,7 +15,7 @@ export const NavStyle = styled.section`
 }
 
 nav{
-    padding: 15px;
+    padding: 12px;
     background: url(${imgnav});
     background-size:cover ;
     background-position: center;
@@ -33,7 +33,7 @@ nav ul{
     gap: 30px;
     padding: 15px;
     border-radius: 50px;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(20px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, .18);
     transition: .7s all ease-in-out;
@@ -41,7 +41,7 @@ nav ul{
 }
 
 nav ul:hover{
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     transition: .7s all ease-in-out;
 }
 
@@ -58,17 +58,17 @@ nav ul li:hover{
 
 nav ul li a{
     text-decoration: none;
-    color: var(--color1);
+    color: var(--color7);
     font-size: 30px;
     transition: all .2s ease-in-out;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
 
 nav ul li a:hover{
-    color: var(--color7);
+    color: var(--color1);
 }
     
 
