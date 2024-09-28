@@ -7,7 +7,8 @@ import paisagem1 from "../assets/carro1.webp"
 import paisagem2 from "../assets/carro2.jpg"
 import paisagem3 from "../assets/carro3.jpg"
 import paisagem4 from "../assets/carro4.webp"
-import card1 from "../assets/card1.jpg"
+import card1 from "../assets/modelS.png"
+import card2 from "../assets/modelY.jpg"
 import byd from "../assets/byd.webp"
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
@@ -40,7 +41,7 @@ const Home=()=>{
                     </div>
                 </div>
                 <div className="card">
-                    <img src={card1}/>
+                    <img src={card2}/>
                     <div>
                         <h2>Tesla Model Y</h2>
                         <h3>R$ 650.000 </h3>
@@ -64,11 +65,11 @@ const Home=()=>{
                                 </header>
                                 <var>530</var>
                                 <h3>CV</h3>
-                                <h4>Completed: 13</h4>
+                                <h4>Clique: Detalhes</h4>
                             </div>
                             <div className="back">
                                 <header>
-                                <h2>Summary</h2>
+                                <h2>Cavalos</h2>
                                 <span><IoIosClose/></span>
                                 </header>
                                 <p>More Information</p>
@@ -85,11 +86,11 @@ const Home=()=>{
                             </header>
                             <var>180</var>
                             <h3>km/h</h3>
-                            <h4>Yesterday: 9</h4>
+                            <h4>Clique: Detalhes</h4>
                         </div>
                         <div className="back">
                             <header>
-                            <h2>Overdue</h2>
+                            <h2>Velocidade Max</h2>
                             <span><IoIosClose/></span>
                             </header>
                             <p>More Information</p>
@@ -101,16 +102,16 @@ const Home=()=>{
                         <div className="card2">
                             <div className="front">
                                 <header>
-                                <h2>Features</h2>
+                                <h2>Autonomia</h2>
                                 <span><HiOutlineDotsVertical/></span>
                                 </header>
                                 <var>372</var>
                                 <h3>km de autonomia</h3>
-                                <h4>Implemented: 6</h4>
+                                <h4>Clique: Detalhes</h4>
                             </div>
                             <div className="back">
                                 <header>
-                                <h2>Features</h2>
+                                <h2>Autonomia</h2>
                                 <span><IoIosClose/></span>
                                 </header>
                                 <p>More Information</p>

@@ -15,22 +15,25 @@ export const LoginStyle = styled.section`
 
 .container{
     width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    min-height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background: transparent;
+    flex-direction: column-reverse;
+    height: auto;
+    background: #050C12;;
+}
+
+.container img{
+    width: 100vh;
+    height: auto;
 }
 
 .login{
-    width: 400px;
-    margin-left: 50px;
-    background: transparent;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
 }
+
 .login-form{
     background-color: var(--color1);
     padding: 2rem;
@@ -39,6 +42,7 @@ export const LoginStyle = styled.section`
     max-width: 400px;
     width: 100%;
 }
+
 .titulo{
     display: block;
     font-size: 2.3rem;
@@ -46,6 +50,7 @@ export const LoginStyle = styled.section`
     text-align: center;
 
 }
+
 .div-input{
     width: 100%;
     position: relative;
@@ -54,9 +59,11 @@ export const LoginStyle = styled.section`
     border: none;
     border-bottom: 2px solid #d9d9d9;
 }
+
 .div-input:hover{
     border-bottom:2px solid blue;
 }
+
 .caixa-input{
     font-size: 1rem;
     color: #555;

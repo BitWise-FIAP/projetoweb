@@ -2,6 +2,7 @@ import "../css/global.css"
 import { useNavigate, Link } from "react-router-dom"
 import { useEffect, useRef, useState} from "react"
 import { LoginStyle } from "../css/LoginStyle";
+import background from "../assets/img-login3.jpg"
 
 const Login=()=>{
     // usando useRef para identificar os elementos
@@ -60,6 +61,7 @@ const Login=()=>{
         <>
         <LoginStyle>
             <section className="container">
+                <img src={background} />
                 <div className="login">
                     <form className="login-form" onSubmit={handleSubmit}>
                         <span className="titulo">Faça seu login</span>

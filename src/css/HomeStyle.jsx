@@ -69,7 +69,7 @@ export const HomeStyle = styled.section`
   width: 45vw;
   height: 300px;
   object-fit: cover;
-  object-position: 55%;
+  object-position: 5%;
   margin-left: -60px;
   margin-right: 30px;
   border-radius: inherit;
@@ -196,6 +196,7 @@ export const HomeStyle = styled.section`
 
 .cards2 {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
