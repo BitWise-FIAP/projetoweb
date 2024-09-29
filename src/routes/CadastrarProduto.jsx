@@ -37,8 +37,8 @@ const CadastrarProduto=()=>{
                 <section className="content">
                     <h1>Cadastrar novo produto</h1>
                     <form className="div-input" onSubmit={handleSubmit}>
-                        <input className="caixa-input" type="text" name="nome" placeholder="Nome do produto" onChange={handleChange}/>
-                        <input className="caixa-input" type="number" name="preco" placeholder="Preço do produto" onChange={handleChange}/>
+                        <input className="caixa-input" type="text" name="nome" placeholder="Nome do produto" required onChange={handleChange}/>
+                        <input className="caixa-input" type="number" name="preco" placeholder="Preço do produto" required onChange={handleChange}/>
                         <div className="botao">
                             <button className="botao-cadastro" type="submit">Cadastrar</button>   
                         </div> 
